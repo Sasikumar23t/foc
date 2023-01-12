@@ -1,0 +1,4 @@
+echo "enter N"
+read n
+s=`expr $n \* $n`
+echo $s
