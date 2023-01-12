@@ -1,0 +1,25 @@
+N=3
+i=1
+sum=0
+
+echo "Enter marks"
+while [ $i -le $N ]
+do
+  read num           #get number
+  sum=$((sum + num)) #sum+=num
+  i=$((i + 1))
+done
+
+echo Total = $sum
+if [ $sum -gt 240 ]
+then 
+echo first class
+elif [ $sum -gt 200 ]
+then 
+echo second class
+elif [ $sum -gt 150 ]
+then 
+echo third class
+else
+echo fail
+fi
